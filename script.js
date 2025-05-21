@@ -13,7 +13,7 @@ if (name == "") {
 // Validating email address is entered
 let email = document.getElementById("email").value;
 //console.log(email)
-if (email == "") {
+if (email == "" || email.includes("@") == false) {
     alert("Please enter a valid email");
     return false;
 }
